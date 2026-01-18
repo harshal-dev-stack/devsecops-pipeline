@@ -8,21 +8,7 @@ DevSecOps follows a shift-left mindset by embedding security checks early in the
 
 ## Pipeline Flow
 
-Developer Commit (GitHub)
-↓
-CI Trigger (Jenkins)
-↓
-Build & Unit Tests
-↓
-Static Code Analysis (SAST – SonarQube)
-↓
-Dependency & Image Scan (SCA – Trivy)
-↓
-Dynamic Security Testing (DAST – OWASP ZAP)
-↓
-Artifact Packaging (Docker)
-↓
-Deployment (AWS – conceptual)
+Developer Commit (GitHub) -> CI Trigger (Jenkins) -> Build & Unit Tests -> Static Code Analysis (SAST – SonarQube) -> Dependency & Image Scan (SCA – Trivy) -> Dynamic Security Testing (DAST – OWASP ZAP) -> Artifact Packaging (Docker) -> Deployment (AWS – conceptual)
 
 ## Tools Used (Conceptual)
 
